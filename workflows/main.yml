@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  initial_flow:
+    runs-on: ubuntu-latest
+    name: A job to train new model
+    steps:
+    - name: Train new model
+      id: train
+      uses: ZoranPandovski/automl-actions@v0.0.1
+      with:
+        dataset: 'https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv'
+
