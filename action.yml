@@ -1,0 +1,6 @@
+# action.yml
+name: 'AutML Workflow'
+description: 'Automated Machine Learning inside Github Actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
