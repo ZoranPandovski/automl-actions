@@ -1,6 +1,10 @@
 # action.yml
 name: 'AutML Workflow'
 description: 'Automated Machine Learning inside Github Actions'
+inputs:
+  dataset:  # id of input
+    description: 'Path to your data'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
