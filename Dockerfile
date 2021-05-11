@@ -5,6 +5,5 @@ RUN apt-get update && \
     pip install mindsdb_native;
 
 COPY mdb.py /mdb.py
-ENTRYPOINT ["python"]
 
-CMD ["/mdb.py"]
+CMD ["python", "/mdb.py", "--dataset", "$dataset"]
