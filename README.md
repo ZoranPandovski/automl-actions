@@ -1,1 +1,14 @@
-# automl-actions
+# AutoML GitHub Action
+
+
+## Usage
+
+```
+```
+
+### Inputs
+
+
+### Outputs
+
+
