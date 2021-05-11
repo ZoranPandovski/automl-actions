@@ -9,5 +9,5 @@ jobs:
       id: train
       uses: ZoranPandovski/automl-actions@v0.0.1
       with:
-        dataset: 'https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv'
+        dataset: "https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv"
 
