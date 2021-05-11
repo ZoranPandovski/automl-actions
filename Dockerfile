@@ -7,4 +7,4 @@ RUN apt-get update && \
 COPY mdb.py /mdb.py
 ENTRYPOINT ["python"]
 
-CMD ["/mdb.py", "--dataset", "$dataset"]
+CMD ["/mdb.py", "--dataset", "$INPUT_DATASET"]
