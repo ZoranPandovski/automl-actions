@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Train new model
       id: train
-      uses: ZoranPandovski/automl-actions@v0.0.8
+      uses: ZoranPandovski/automl-actions@v0.0.9
       with:
         dataset: "https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv"
         target: "rental_price"
