@@ -2,11 +2,15 @@
 name: 'AutML Workflow'
 description: 'Automated Machine Learning inside Github Actions'
 inputs:
-  dataset:  # id of input
-    description: 'Path to your data'
+  dataset:  
+    description: 'Data URL'
+    required: true
+  target:  
+    description: 'The target variable'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.dataset }}
+    - ${{ inputs.target }}
