@@ -2,13 +2,13 @@ import mindsdb_native
 import sys
 import os
 
-print('HERE **************************')
-print("PARAMETER1: ", sys.argv[2])
-print("PARAMETER2: ", os.getenv('INPUT_DATASET'))
+DATA = os.getenv('INPUT_DATASET')
+TARGET = os.getenv('INPUT_TARGET')
+
 # Train a predictor with quick_learn
 predictor = mindsdb_native.Predictor(name='test_quick_interface')
 predictor.quick_learn(
-    from_data=sys.argv[2],
-    to_predict=sys.argv[4],
+    from_data=DATA,
+    to_predict=TARGET,
     stop_training_in_x_seconds=5
 )
