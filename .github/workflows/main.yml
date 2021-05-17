@@ -1,5 +1,9 @@
-on: [push]
-
+on: 
+    push:
+      branches:
+        - main
+      paths-ignore:
+        - '**.md'
 jobs:
   initial_flow:
     runs-on: ubuntu-latest
