@@ -1,9 +1,10 @@
 import mindsdb_native
 import sys
+import os
 
 print('HERE **************************')
 print("PARAMETER1: ", sys.argv[2])
-print("PARAMETER2: ", sys.argv[4])
+print("PARAMETER2: ", os.getenv('INPUT_DATASET'))
 # Train a predictor with quick_learn
 predictor = mindsdb_native.Predictor(name='test_quick_interface')
 predictor.quick_learn(
