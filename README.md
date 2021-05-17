@@ -5,7 +5,7 @@
 
 Inside your workflow.yml file add:
 
-```
+```yaml
 job_name:
   runs-on: ubuntu-latest
   name: A job to train new model
