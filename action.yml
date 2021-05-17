@@ -8,9 +8,13 @@ inputs:
   target:  
     description: 'The target variable'
     required: true
+  stop_training:
+    description: 'Stop training after X seconds'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.dataset }}
     - ${{ inputs.target }}
+    - ${{ inputs.stop_training }}
