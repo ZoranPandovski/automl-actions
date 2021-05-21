@@ -14,4 +14,4 @@ predictor.learn(
     from_data=DATA,
     stop_training_in_x_seconds=5
 )
-print('Test output')
+os.system("echo ::set-output name=prediction::itworks")
