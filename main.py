@@ -14,4 +14,7 @@ predictor.learn(
     from_data=DATA,
     stop_training_in_x_seconds=5
 )
-os.system("echo ::set-output name=prediction::itworks")
+
+result = predictor.predict(when_data={'sqft' : 500})
+
+os.system("echo ::set-output name=prediction::" + result)
