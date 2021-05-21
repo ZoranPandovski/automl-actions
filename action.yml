@@ -11,6 +11,9 @@ inputs:
   stop_training:
     description: 'Stop training after X seconds'
     required: false
+outputs:
+  prediction:
+    description: 'Predicted value'
 runs:
   using: 'docker'
   image: 'Dockerfile'

@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to train new model
     steps:
+    id: train
     - name: Train new model
-      id: train
       uses: ZoranPandovski/automl-actions@main
       with:
         dataset: "https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv"
         target: "rental_price"
-
+    - name: Predicted value
+        run: echo "${{ steps.train.outputs.prediction }}"
