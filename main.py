@@ -1,6 +1,7 @@
 import mindsdb_native
 import sys
 import os
+import json
 
 # Read env variables send from GH Action
 DATA = os.getenv('INPUT_DATASET')
@@ -17,4 +18,4 @@ predictor.learn(
 
 result = predictor.predict(when_data={'sqft' : 500})
 
-os.system("echo ::set-output name=prediction::" + result[0].explain())
+os.system("echo ::set-output name=prediction::" + json.dumps(result[0].explain())
