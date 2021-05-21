@@ -17,5 +17,5 @@ predictor.learn(
 )
 
 result = predictor.predict(when_data={'sqft' : 500})
-
-os.system("echo ::set-output name=prediction::" + json.dumps(result[0].explain())
+output = json.dumps(result[0].explain())
+os.system("echo ::set-output name=prediction::" + output)
