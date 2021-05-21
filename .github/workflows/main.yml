@@ -16,4 +16,4 @@ jobs:
         dataset: "https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv"
         target: "rental_price"
     - name: Predicted value
-        run: echo "${{ steps.train.outputs.prediction }}"
+      run: echo "${{ steps.train.outputs.prediction }}"
