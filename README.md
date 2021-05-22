@@ -20,20 +20,20 @@ job_name:
       when: "{sqft: 500, rooms: 5}"
 ```
 
-### Inputs
+### :factory: Inputs :ship:
 
-| Name 	| Required 	| Description 	|  	|  	|
-|-	|-	|-	|-	|-	|
-| dataset 	| Yes 	| The path or URL to data. Can be path to the data file inside the repository or any public acessible URL as path to s3 file, raw github file, public JSON API etc. 	|  	|  	|
-| target 	| Yes 	| The name of the variable that needs to be predicted. 	|  	|  	|
-| when 	| Yes 	| The data that you want to make a prediction for e.g {"key" : "value", "key": "value"} 	|  	|  	|
-| stop_training 	| No 	| Stop model training after X seconds. 	|  	|  	|
+| Name 	| Required 	| Description 	|  
+|-	|-	|-	|
+|  **dataset** :books: 	| Yes 	| The path or URL to data. Can be path to the data file inside the repository or any public acessible URL as path to s3 file, raw github file, public JSON API etc. 	|
+| **target** :pushpin: 	| Yes 	| The name of the variable that needs to be predicted. 	| 
+| **when** :scroll:	| Yes 	| The data that you want to make a prediction for e.g {"key" : "value", "key": "value"} 	|
+| **stop_training** :alarm_clock:| No 	| Stop model training after X seconds. 	|
 
-### Outputs
+### :carousel_horse: Outputs :ferris_wheel:
 
 | Name 	| Description 	|  	  	
 |-	|-	|
-| prediction 	| The predicted value 	|  	
+| **prediction** :chart_with_upwards_trend: 	| The predicted value 	|  	
 
 An example output that displays the predicted value, confidence and confidence interval.
 
@@ -41,13 +41,16 @@ An example output that displays the predicted value, confidence and confidence i
 
 ### :construction_worker:  :construction:  Roadmap :construction_worker:  :construction: 
 
-- [X] **v1.0.0**
+- [X] :loudspeaker: **v1.0.0**
     * POC
     * Accept input as dataset, target variable, query.
     * Return prediction as output.
-- [ ] **v2.0.0**
+- [ ] :tractor: **v2.0.0**
     * Add option for batch prediction using data in repo file or public accesible data.
     * Add option for data analysis as output.
     * Accept timeseries parameters as input e.g order_by, group_by.
-- [ ] **v3.0.0**
+- [ ] :truck: **v3.0.0**
     * Add option to upload a model to s3, GitHub repo, azure blob storage etc.
+
+### :checkered_flag: :warning: Disclaimer :checkered_flag: :warning:
+> :vertical_traffic_light: For the GitHub Actions usage and billing check out the [GitHub Site Policy](https://docs.github.com/en/github/site-policy/github-additional-product-terms#5-actions-and-packages).
