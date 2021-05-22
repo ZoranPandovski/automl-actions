@@ -1,5 +1,8 @@
 # AutoML GitHub Action
 
+[![.github/workflows/main.yml](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml)
+![GitHub](https://img.shields.io/github/license/ZoranPandovski/automl-actions)
+
 >**Easly do data analysis, train new model and get the prediction as an output using :bear:MindsDB:bear: inside GitHub Actions.**
 
 ## Usage
