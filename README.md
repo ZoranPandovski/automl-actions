@@ -35,6 +35,9 @@ job_name:
 |-	|-	|
 | prediction 	| The predicted value 	|  	
 
+An example output that displays the predicted value, confidence and confidence interval.
+
+![GitHub Action Output](media/gh-action.png)
 
 ### :construction_worker:  :construction:  Roadmap :construction_worker:  :construction: 
 
