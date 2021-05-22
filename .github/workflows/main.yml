@@ -15,6 +15,6 @@ jobs:
       with:
         dataset: "https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/home_rentals/dataset/test.csv"
         target: "rental_price"
-        when: "{'sqft': 3000}"
+        when: '{"sqft": 3000}'
     - name: Predicted value
       run: echo "${{ steps.train.outputs.prediction }}"
