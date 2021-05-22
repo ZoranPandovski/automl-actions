@@ -16,8 +16,7 @@ predictor.learn(
     from_data=DATA,
     stop_training_in_x_seconds=5
 )
-print("FROM DATA ", WHEN_DATA)
-print(type(WHEN_DATA))
-result = predictor.predict(when_data=WHEN_DATA)
+
+result = predictor.predict(when_data=json.loads(WHEN_DATA))
 output = json.dumps(result[0].explain())
 os.system("echo ::set-output name=prediction::" + output)
