@@ -5,7 +5,7 @@
 
 >**Easly do data analysis, train new model and get the prediction as an output using :bear:MindsDB:bear: inside GitHub Actions.**
 
-## Usage
+## :floppy_disk: Usage :electric_plug:
 
 Inside your workflow.yml file add:
 
@@ -16,7 +16,7 @@ job_name:
   steps:
   - name: Train new model
     id: train
-    uses: ZoranPandovski/automl-actions@main
+    uses: ZoranPandovski/automl-actions@v1.0.0
     with:
       dataset: "home_rentals.csv"
       target: "price"
