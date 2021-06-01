@@ -1,6 +1,7 @@
 # AutoML GitHub Action
 
-[![.github/workflows/main.yml](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml)
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-v1.0.0-undefined.svg?logo=github&logoColor=white&style=flat)](https://github.com/marketplace/actions/autml-workflow)
+[![Workflow for AutomML Action](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/ZoranPandovski/automl-actions/actions/workflows/main.yml)
 ![GitHub](https://img.shields.io/github/license/ZoranPandovski/automl-actions)
 
 >**Easly do data analysis, train new model and get the prediction as an output using :bear:MindsDB:bear: inside GitHub Actions.**
@@ -23,20 +24,20 @@ job_name:
       when: "{sqft: 500, rooms: 5}"
 ```
 
-### :factory: Inputs :ship:
+## :factory: Inputs :ship: ##
 
 | Name 	| Required 	| Description 	|  
-|-	|-	|-	|
-|  **dataset** :books: 	| Yes 	| The path or URL to data. Can be path to the data file inside the repository or any public acessible URL as path to s3 file, raw github file, public JSON API etc. 	|
-| **target** :pushpin: 	| Yes 	| The name of the variable that needs to be predicted. 	| 
-| **when** :scroll:	| Yes 	| The data that you want to make a prediction for e.g {"key" : "value", "key": "value"} 	|
-| **stop_training** :alarm_clock:| No 	| Stop model training after X seconds. 	|
+|---|-	|-	|
+|**dataset**| Yes 	| The path or URL to data. Can be path to the data file inside the repository or any public acessible URL as path to s3 file, raw github file, public JSON API etc. 	|
+| **target** 	| Yes 	| The name of the variable that needs to be predicted. 	| 
+| **when** 	| Yes 	| The data that you want to make a prediction for e.g {"key" : "value", "key": "value"} 	|
+| **stop_training** | No 	| Stop model training after X seconds. 	|
 
 ### :carousel_horse: Outputs :ferris_wheel:
 
 | Name 	| Description 	|  	  	
 |-	|-	|
-| **prediction** :chart_with_upwards_trend: 	| The predicted value 	|  	
+| **prediction** 	| The predicted value 	|  	
 
 An example output that displays the predicted value, confidence and confidence interval.
 
